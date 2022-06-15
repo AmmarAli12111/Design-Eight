@@ -87,7 +87,7 @@ header p {
     padding-bottom: 100px;
 }
 
-.content .container .box {
+.content .container div.box {
     background-color: #fff;
     padding: 20px 30px 25px;
     border-radius: 10px;
@@ -100,10 +100,10 @@ header p {
     position: relative;
 }
 
-.content .container .first::before,
-.content .container .second::before,
-.content .container .third::before,
-.content .container .fourth::before {
+.content .container div.box.first::before,
+.content .container div.box.second::before,
+.content .container div.box.third::before,
+.content .container div.box.fourth::before {
     content: "";
     position: absolute;
     top: -1px;
@@ -115,32 +115,32 @@ header p {
     border-top-right-radius: 10px;
 }
 
-.content .container .first::before {
+.content .container div.box.first::before {
     background-color: hsl(180, 62%, 55%);
 }
 
-.content .container .second::before {
+.content .container div.box.second::before {
     background-color: hsl(0, 78%, 62%);
 }
 
-.content .container .third::before {
+.content .container div.box.third::before {
     background-color: hsl(34, 97%, 64%);
 }
 
-.content .container .fourth::before {
+.content .container div.box.fourth::before {
     background-color: hsl(212, 86%, 64%);
 }
 
 @media (min-width:1200px) {
-    .content .container .third {
+    .content .container div.box.third {
         order: 4;
     }
 }
 
 @media (min-width:1200px) {
 
-    .content .container .first,
-    .content .container .fourth {
+    .content .container div.box.first,
+    .content .container div.box.fourth {
         transform: translateY(150px);
         -webkit-transform: translateY(150px);
         -moz-transform: translateY(150px);
@@ -149,20 +149,20 @@ header p {
     }
 }
 
-.content .container .box h3 {
+.content .container div.box h3 {
     color: hsl(234, 12%, 34%);
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.content .container .box p {
+.content .container div.box p {
     color: hsl(229, 6%, 66%);
     font-size: 13px;
     line-height: 1.9;
     margin-bottom: 35px;
 }
 
-.content .container .box .image {
+.content .container div.box .image {
     text-align: right;
 }
